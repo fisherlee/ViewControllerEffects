@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.h
+//  ViewControllerEffects
+//
+//  Created by liwei on 2017/3/23.
+//  Copyright © 2017年 liwei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ABCAnimator.h"
+#import "UIViewController+ABC.h"
+
+#endif /* PrefixHeader_pch */

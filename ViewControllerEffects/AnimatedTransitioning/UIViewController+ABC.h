@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (Swizzling)<UINavigationControllerDelegate>
+@interface UIViewController (ABC)<UINavigationControllerDelegate>
+
+@property (nonatomic, strong) NSNumber *time_interval;
+@property (nonatomic, strong) NSNumber *animator_type;
+
 
 @end

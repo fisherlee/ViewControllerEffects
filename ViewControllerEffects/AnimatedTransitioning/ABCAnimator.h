@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, ABCAnimatorTransition) {
-    ABCPushAnimatorTransitionToScale,
+    ABCPushAnimatorTransitionToScale = 1000,
     ABCPushAnimatorTransitionToFilp,
     ABCPushAnimatorTransitionToSwipe,
     ABCPushAnimatorTransitionToOT,
@@ -22,6 +22,9 @@ typedef NS_ENUM(NSInteger, ABCAnimatorTransition) {
 
 @interface ABCAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic, assign) double interval;
 @property (nonatomic, assign) NSInteger transition;
+
+- (id)initWithTimeInterval:(double)interval;
 
 @end

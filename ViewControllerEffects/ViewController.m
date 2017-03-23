@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
-#import "ABCAnimator.h"
+#import "DetailViewController.h"
 
-@interface ViewController ()<UINavigationControllerDelegate>
+@interface ViewController ()
 
 @end
 
@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.delegate = self;
 }
 
 
@@ -27,22 +26,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - UINavigationControllerDelegate
-//- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-//    
-//    if (operation == UINavigationControllerOperationPush) {
-//        ABCAnimator *animator = [[ABCAnimator alloc] init];
-//        animator.transition = ABCPushAnimatorTransitionToScale;
-//        return animator;
-//    }
-//    if (operation == UINavigationControllerOperationPop) {
-//        ABCAnimator *animator = [[ABCAnimator alloc] init];
-//        animator.transition = ABCPopAnimatorTransitionToScale;
-//        return animator;
-//    }
-//    
-//    return nil;
-//}
 
 #pragma mark -  button action
 - (IBAction)wirteButtonAction:(id)sender {
@@ -82,8 +65,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-
+    
+    self.animator_type = @(ABCPushAnimatorTransitionToScale);
+    
+    DetailViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailStoryId"];
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 
 

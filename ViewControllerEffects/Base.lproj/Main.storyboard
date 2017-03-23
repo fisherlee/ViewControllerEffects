@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ePk-mg-Exv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ePk-mg-Exv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,6 +44,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBj-xP-wrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="135"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="sGq-2h-efd">
+            <objects>
+                <viewController storyboardIdentifier="DetailStoryId" id="mWP-8H-5NK" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bu-mF-Z1b"/>
+                        <viewControllerLayoutGuide type="bottom" id="GQP-hy-Ry0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ANO-oL-G9D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzM-a2-hh4">
+                                <rect key="frame" x="170" y="77" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4jX-su-0tm"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backAction:" destination="mWP-8H-5NK" eventType="touchUpInside" id="MPV-Ia-q0M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pzM-a2-hh4" firstAttribute="top" secondItem="0bu-mF-Z1b" secondAttribute="bottom" constant="57" id="6X2-lx-bXk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pzM-a2-hh4" secondAttribute="trailing" constant="155" id="VEo-Yc-3Nc"/>
+                            <constraint firstItem="pzM-a2-hh4" firstAttribute="leading" secondItem="ANO-oL-G9D" secondAttribute="leadingMargin" constant="154" id="gut-S7-1Td"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0y-hD-s8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="815"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="7up-HI-T5p">

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04401031E83AC3B002F91AE /* UIViewController+ABC.m in Sources */ = {isa = PBXBuildFile; fileRef = D04401021E83AC3B002F91AE /* UIViewController+ABC.m */; };
+		D044010A1E83BD65002F91AE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04401091E83BD65002F91AE /* DetailViewController.m */; };
 		D086FBCD1E5FD3130034DFA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBCC1E5FD3130034DFA5 /* main.m */; };
 		D086FBD01E5FD3130034DFA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBCF1E5FD3130034DFA5 /* AppDelegate.m */; };
 		D086FBD31E5FD3130034DFA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBD21E5FD3130034DFA5 /* ViewController.m */; };
@@ -14,12 +16,16 @@
 		D086FBD81E5FD3130034DFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D086FBD71E5FD3130034DFA5 /* Assets.xcassets */; };
 		D086FBDB1E5FD3130034DFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D086FBD91E5FD3130034DFA5 /* LaunchScreen.storyboard */; };
 		D086FBE41E5FD48F0034DFA5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBE31E5FD48F0034DFA5 /* SecondViewController.m */; };
-		D086FBEF1E5FDF7F0034DFA5 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBEE1E5FDF7F0034DFA5 /* UIViewController+Swizzling.m */; };
 		D086FBF61E5FE2E40034DFA5 /* ABCAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBF51E5FE2E40034DFA5 /* ABCAnimator.m */; };
 		D086FBFA1E6013840034DFA5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086FBF91E6013840034DFA5 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D04401011E83AC3B002F91AE /* UIViewController+ABC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ABC.h"; sourceTree = "<group>"; };
+		D04401021E83AC3B002F91AE /* UIViewController+ABC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ABC.m"; sourceTree = "<group>"; };
+		D04401071E83B41D002F91AE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D04401081E83BD65002F91AE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D04401091E83BD65002F91AE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D086FBC81E5FD3130034DFA5 /* ViewControllerEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D086FBCC1E5FD3130034DFA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D086FBCE1E5FD3130034DFA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +38,6 @@
 		D086FBDC1E5FD3130034DFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D086FBE21E5FD48F0034DFA5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D086FBE31E5FD48F0034DFA5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		D086FBED1E5FDF7F0034DFA5 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
-		D086FBEE1E5FDF7F0034DFA5 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
 		D086FBF41E5FE2E40034DFA5 /* ABCAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCAnimator.h; sourceTree = "<group>"; };
 		D086FBF51E5FE2E40034DFA5 /* ABCAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCAnimator.m; sourceTree = "<group>"; };
 		D086FBF81E6013840034DFA5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -73,10 +77,10 @@
 				D086FBF01E5FE2150034DFA5 /* AnimatedTransitioning */,
 				D086FBCE1E5FD3130034DFA5 /* AppDelegate.h */,
 				D086FBCF1E5FD3130034DFA5 /* AppDelegate.m */,
-				D086FBED1E5FDF7F0034DFA5 /* UIViewController+Swizzling.h */,
-				D086FBEE1E5FDF7F0034DFA5 /* UIViewController+Swizzling.m */,
 				D086FBD11E5FD3130034DFA5 /* ViewController.h */,
 				D086FBD21E5FD3130034DFA5 /* ViewController.m */,
+				D04401081E83BD65002F91AE /* DetailViewController.h */,
+				D04401091E83BD65002F91AE /* DetailViewController.m */,
 				D086FBE21E5FD48F0034DFA5 /* SecondViewController.h */,
 				D086FBE31E5FD48F0034DFA5 /* SecondViewController.m */,
 				D086FBF81E6013840034DFA5 /* ThirdViewController.h */,
@@ -85,6 +89,7 @@
 				D086FBD71E5FD3130034DFA5 /* Assets.xcassets */,
 				D086FBD91E5FD3130034DFA5 /* LaunchScreen.storyboard */,
 				D086FBDC1E5FD3130034DFA5 /* Info.plist */,
+				D04401071E83B41D002F91AE /* PrefixHeader.pch */,
 				D086FBCB1E5FD3130034DFA5 /* Supporting Files */,
 			);
 			path = ViewControllerEffects;
@@ -103,6 +108,8 @@
 			children = (
 				D086FBF41E5FE2E40034DFA5 /* ABCAnimator.h */,
 				D086FBF51E5FE2E40034DFA5 /* ABCAnimator.m */,
+				D04401011E83AC3B002F91AE /* UIViewController+ABC.h */,
+				D04401021E83AC3B002F91AE /* UIViewController+ABC.m */,
 			);
 			path = AnimatedTransitioning;
 			sourceTree = "<group>";
@@ -181,9 +188,10 @@
 				D086FBE41E5FD48F0034DFA5 /* SecondViewController.m in Sources */,
 				D086FBD31E5FD3130034DFA5 /* ViewController.m in Sources */,
 				D086FBD01E5FD3130034DFA5 /* AppDelegate.m in Sources */,
-				D086FBEF1E5FDF7F0034DFA5 /* UIViewController+Swizzling.m in Sources */,
+				D044010A1E83BD65002F91AE /* DetailViewController.m in Sources */,
 				D086FBCD1E5FD3130034DFA5 /* main.m in Sources */,
 				D086FBF61E5FE2E40034DFA5 /* ABCAnimator.m in Sources */,
+				D04401031E83AC3B002F91AE /* UIViewController+ABC.m in Sources */,
 				D086FBFA1E6013840034DFA5 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ViewControllerEffects/PrefixHeader.pch";
 				INFOPLIST_FILE = ViewControllerEffects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerEffects;
@@ -315,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ViewControllerEffects/PrefixHeader.pch";
 				INFOPLIST_FILE = ViewControllerEffects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerEffects;
